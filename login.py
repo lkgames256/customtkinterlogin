@@ -12,11 +12,7 @@ CREATE TABLE IF NOT EXISTS userdata(
 )
 """)
 
-username1, password1 = "mike213", hashlib.sha256("mikepassword".encode()).hexdigest()
-username2, password2 = "nicole", hashlib.sha256("nicolepassword".encode()).hexdigest()
-username3, password3 = "lukas", hashlib.sha256("lukaspassword".encode()).hexdigest()
-username4, password4 = "jens", hashlib.sha256("jenspassword".encode()).hexdigest()
-username5, password5 = "admin", hashlib.sha256("021080".encode()).hexdigest()
+[insert login data from D:/customtkinter.txt]
 cur.execute("INSERT INTO userdata (username, password) VALUES (?,?)", (username1, password1))
 cur.execute("INSERT INTO userdata (username, password) VALUES (?,?)", (username2, password2))
 cur.execute("INSERT INTO userdata (username, password) VALUES (?,?)", (username3, password3))
